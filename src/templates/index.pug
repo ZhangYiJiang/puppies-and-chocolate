@@ -3,11 +3,13 @@ html
   head
     meta(charset="utf-8")
     title Puppies and Chocolate
+    meta(name="viewport", content="width=device-width,initial-scale=1")
     link(rel="stylesheet", href="app.css")
   body
     div.game
-      div
-        a(href="#start") Let's go!
+      div.intro
+        h1 Puppies and Chocolate
+        a.button.button-primary.start-game(href="#start") Let's go!
     div.story
       include:story:commonmark(safe=false) story.md
       hr

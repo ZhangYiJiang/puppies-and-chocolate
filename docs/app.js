@@ -495,4 +495,5 @@ $game.on('click', 'a[href^="#"]', function (evt) {
   // Fade in + scroll to bottom
   $('body, html').animate({ scrollTop: container.offset().top }, 500);
   container.hide().fadeIn(500);
+  container.prev().fadeTo(300, 0.3);
 });
