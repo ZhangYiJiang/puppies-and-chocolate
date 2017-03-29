@@ -18,10 +18,15 @@ $game.on('click', 'a[href^="#"]', function (evt) {
   const chunk = chunks[chunkName];
   if (!chunk) return;
   
-  const container = $('<div>');
+  // Insert the chunk in a container
+  const container = $('<div class="chunk">');
   chunk.clone().each(function() {
     container.prepend(this);
   });
   
   $game.append(container);
+  
+  // Fade in + scroll to bottom
+  $('body, html').animate({ scrollTop: container.offset().top }, 500);
+  container.hide().fadeIn(500);
 });

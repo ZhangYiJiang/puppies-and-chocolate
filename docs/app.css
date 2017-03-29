@@ -842,3 +842,6 @@ there.
 .game {
   max-width: 500px;
   margin: 0 auto; }
+
+.chunk {
+  padding-bottom: 200px; }
