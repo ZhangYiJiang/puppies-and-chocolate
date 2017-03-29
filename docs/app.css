@@ -836,3 +836,9 @@ there.
 /* Larger than tablet */
 /* Larger than desktop */
 /* Larger than Desktop HD */
+.story {
+  display: none; }
+
+.game {
+  max-width: 500px;
+  margin: 0 auto; }

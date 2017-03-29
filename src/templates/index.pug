@@ -5,5 +5,12 @@ html
     title Puppies and Chocolate
     link(rel="stylesheet", href="app.css")
   body
-    div
+    div.game
+      div
+        a(href="#start") Let's go!
+    div.story
       include:story:commonmark(safe=false) story.md
+      hr
+    
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+    script(src="app.js")
