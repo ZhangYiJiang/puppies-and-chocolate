@@ -8,7 +8,7 @@ exports.render = function (str) {
     
     if (trimmedLine.startsWith('{') && trimmedLine.endsWith('}')) {
       const name = trimmedLine.slice(1, -1).trim();
-      return `<a name="${name}">\n`;
+      return `<a name="${name}"></a>\n`;
     } else {
       const matches = line.match(/\s*[*-]\s*([^{]+){([^}]+)}/);
       if (matches) {
@@ -21,5 +21,3 @@ exports.render = function (str) {
     return line;
   }).join('\n');
 };
-
-  
