@@ -16,7 +16,9 @@ $game.on('click', 'a[href^="#"]', function (evt) {
   
   const chunkName = $(this).attr('href').slice(1);
   const chunk = chunks[chunkName];
-  if (!chunk) return;
+  // Exit if the link doesn't go to a chunk that exists, or if the player 
+  // isn't pressing on a link in the last chunk
+  if (!chunk || !$(this).closest('.chunk:last-of-type').length) return;
   
   // Insert the chunk in a container
   const container = $('<div class="chunk">');
