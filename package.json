@@ -13,9 +13,11 @@
     "commonmark": "^0.27.0",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
+    "gulp-filter": "^5.0.0",
     "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
-    "gulp-sourcemap": "^1.0.1",
+    "gulp-sourcemaps": "^2.5.0",
     "gulp-uglify": "^2.1.2",
     "jstransformer-commonmark": "^0.3.1",
     "yargs": "^7.0.2"
