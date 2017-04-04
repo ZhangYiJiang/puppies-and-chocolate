@@ -16,13 +16,26 @@ $.fn.fadeNext = function(pDelay, liDelay) {
 };
 
 $story.children('hr').each(function() {
+  // Chunk processing
   const chunk = $(this).prevUntil('hr');
   const anchor = chunk.last().find('a[name]');
   
   if (anchor.length) {
-    const name = anchor.attr('name');
+    chunk.find('a[href]').each(function() {
+      const $this = $(this);
+      let replacement;
+      if ($this.text().includes('|')) {
+        const parts = $this.html().split('|');
+        $this.html(parts[0]);
+        replacement = parts[1];
+      } else {
+        replacement = $this.html();
+      }
+      
+      $this.data('replacement', replacement);
+    });
     
-    chunk.detach();
+    const name = anchor.attr('name');
     chunks[name] = chunk.not(anchor.closest('p'));
   }
 });
@@ -41,11 +54,15 @@ $game.on('click', 'a[href^="#"]', function (evt) {
   
   // Insert the chunk in a container
   const container = $('<div class="chunk">');
-  chunk.clone().each(function() {
+  chunk.clone(true).each(function() {
     container.prepend(this);
   });
   
   $game.append(container);
+  
+  // Add the chosen dialog option into the container as the first line
+  const replacement = $("<p>", { html: $this.data('replacement') });
+  replacement.prependTo(container);
   
   // Fade in + scroll to bottom
   $('body, html').animate({ scrollTop: container.offset().top }, 3600);

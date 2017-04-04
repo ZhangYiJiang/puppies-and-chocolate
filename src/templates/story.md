@@ -16,9 +16,9 @@ The sun is shining warmly, but grey clouds are looming in a distance.
 
 You bring your…
 
-- Puppy {2}
-- Umbrella {2}
-- Purse {2}
+- Puppy | You put a leash on the puppies to take them for a walk {2} 
+- Umbrella | You pick up an umbrella from beside the door {2}
+- Purse | You grab your purse {2}
 
 ---
  
