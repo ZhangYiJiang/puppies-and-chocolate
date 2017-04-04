@@ -3,13 +3,16 @@ const chunks = {};
 const $story = $('.story');
 const $game = $('.game');
 
-$.fn.fadeNext = function(duration, delay) {
-  this.fadeTo(duration, 1).promise()
-    .done(() => {
-      setTimeout(() => {
-        this.next().fadeNext(duration, delay);
-      }, delay)
-    });
+$.fn.fadeNext = function(pDelay, liDelay) {
+  this.first().addClass('pass');
+  
+  if (this.length <= 1) return;
+  
+  const wait = $(this[0]).is('li') ? liDelay: pDelay;
+  
+  setTimeout(() => {
+    this.slice(1).fadeNext(pDelay, liDelay);
+  }, wait);
 };
 
 $story.children('hr').each(function() {
@@ -45,9 +48,8 @@ $game.on('click', 'a[href^="#"]', function (evt) {
   $game.append(container);
   
   // Fade in + scroll to bottom
-  $('body, html').animate({ scrollTop: container.offset().top }, 1600);
-  container.children().fadeTo(0, 0)
-    .first().fadeNext(1200, 600);
+  $('body, html').animate({ scrollTop: container.offset().top }, 3600);
+  container.find('p, li').fadeNext(1200, 400);
   
   container
     .prev().addClass('passed-1')

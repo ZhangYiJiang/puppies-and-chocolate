@@ -11,7 +11,7 @@ a {
 
 .game {
   max-width: 540px;
-  margin: 0 auto 60px;
+  margin: 0 auto 100px;
 }
 
 .chunk {
@@ -19,21 +19,10 @@ a {
   line-height: 1.3;
   transition: 1.6s all;
   
-  &.passed-1 {
-    opacity: 0.8;
-  }
-  
-  &.passed-2 {
-    opacity: 0.6;
-  }
-  
-  &.passed-3 {
-    opacity: 0.4;
-  }
-  
-  &.passed-4 {
-    opacity: 0.25;
-  }
+  &.passed-1 { opacity: 0.8; }
+  &.passed-2 { opacity: 0.6; }
+  &.passed-3 { opacity: 0.4; }
+  &.passed-4 { opacity: 0.25; }
   
   p, ul, ol {
     margin: 1em 0;
@@ -46,6 +35,17 @@ a {
   ul, ol {
     list-style: none;
     text-align: center;
+  }
+  
+  p, li {
+    transition: 1.2s all;
+    opacity: 0;
+    pointer-events: none;
+    
+    &.pass {
+      pointer-events: auto;
+      opacity: 1;
+    }
   }
   
   a {
@@ -63,7 +63,11 @@ a {
 }
 
 .intro {
-  padding: 100px 0 200px;
+  padding: 100px 0 20px;
+  
+  &.passed-1 {
+    opacity: 0.2;
+  }
 }
 
 .start-game {
