@@ -5,7 +5,7 @@ const concat = require('gulp-concat');
 
 const filter = require('gulp-filter');
 const sourcemaps = require('gulp-sourcemaps');
-const browserSync = require('browser-sync');
+const browserSync = require('browser-sync').create();
 const story = require('./story_transformer');
 
 const outFolder = 'docs';
@@ -35,12 +35,17 @@ gulp.task('js', () => {
     .pipe(gulp.dest(outFolder));
 });
 
+gulp.task('js-watch', ['js'], (done) => {
+  browserSync.reload();
+  done();
+});
+
 gulp.task('build', ['template', 'scss', 'js']);
 
 // Build is a pre-req so that we start serving the latest version of files
 gulp.task('serve', ['build'], () => {
   // Start the browser sync server
-  browserSync({
+  browserSync.init({
     server: {
       baseDir: 'docs',
     },
@@ -48,5 +53,6 @@ gulp.task('serve', ['build'], () => {
   
   // Watch for changes to SCSS files and trigger the build process when 
   // they are updated
-  return gulp.watch(`${srcFolder}/scss/**/*.scss`, ['scss']);
+  gulp.watch(`${srcFolder}/scss/**/*.scss`, ['scss']);
+  gulp.watch(`${srcFolder}/js/*.js`, ['js-watch']);
 });

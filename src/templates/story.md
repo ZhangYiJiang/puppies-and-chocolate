@@ -1,42 +1,59 @@
 {start}
-## Introduction 
 
-Hello there! 
+You have just moved into The Vanderwich Estate. 
 
-- Choice 1 {choice-1}
-- Choice 2 {choice-2}
+You spend the rest of the morning unloading your boxes of belongings. 
+
+Tired, you decide to take a break by going for a walk. 
+
+- You look out of the window. {window}
 
 ---
 
-{choice-1}
-## Choice 1
+{window}
 
-You've been eaten by a grue. The end. 
+The sun is shining warmly, but grey clouds are looming in a distance.
+
+You bring your…
+
+- Puppy {2}
+- Umbrella {2}
+- Purse {2}
+
+---
  
-- Start over {start}
+{2}
 
---- 
+While walking, you noticed your next door neighbour watering his plants at his front porch.
 
-{choice-2}
-## Choice 2
+He looks a little grizzled, but he seems to have an friendly demeanour.
 
-Carry on! Lorem ipsum dolor sit amet, at quo putant melius vituperatoribus, latine offendit in ius. Est ne quando ubique. No solet quaerendum complectitur mea, sale clita ancillae ad pro. Usu amet scripta in, utinam facete in sit, per in quidam accusamus. Sit iusto dicunt ei, his at alia simul. Per posse assentior gloriatur ne, pri ea tamquam discere reformidans. Eu eum unum utroque commune, vix ei nibh fugit regione.
+He notices you looking over.
 
-Cu vis reformidans instructior concludaturque, mei id tritani eruditi, eu nec affert essent placerat. Duo brute tempor conceptam et, in ius primis dissentiet, ea quot expetenda consetetur usu. Ad sumo intellegebat vix, an mutat feugiat comprehensam sit. No eum quas tempor. Natum primis labore has ne, illum summo meliore ne nam.
+He smiles and waves.
 
-Eros vocibus constituam pri ut. Malis mollis vocent eu sit, pro an populo inciderint. In aeterno aperiri volumus sea, ex nec labores euripidis reprimique. Id dolorem fabellas eam. Sed idque audiam suscipit an.
+- Smile brightly and wave back with great enthusiasm {3}
+- Fidget awkwardly then nod your head in acknowledgement {3}
 
-Sea salutandi qualisque ad, mel novum debet phaedrum ne. Ea dicit noluisse lucilius sed, ius etiam aeque iuvaret an. Quod cotidieque vis eu. Discere definiebas nec cu, te his cibo accusata, utamur civibus est at. Ut sed solet essent tamquam. Sea menandri assentior neglegentur in, vim in duis discere, scripta invidunt eu vel.
+---
+ 
+{3}
 
-Ne habeo recteque pri, nec iusto eruditi senserit id. In ius essent maiorum, an dolorum offendit mea. Mel ex oporteat euripidis. Per dicant evertitur no, ne per errem mentitum, error conclusionemque ei vix.
+You approached him and found that he had a small shack at his front porch beside his mini garden.
 
-- Onwards {step-2}
+- “You really love gardening don’t you?” {4}
+- ”Nice day out here huh?” {4}
 
---- 
 
-{step-2}
-## Step 2
+---
+ 
+{4}
 
-The end! Thanks for playing! 
+He turned and looked at his masterpiece and smiled.
 
-- Start over {start}
+Removing his right glove, he raised his right hand.
+
+“The name’s Ming, nice to meet you. You’re new here aren’t you? Just moved in?”
+
+- You gently shake his hand. {5}
+ 
