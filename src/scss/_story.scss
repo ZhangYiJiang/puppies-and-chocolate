@@ -1,22 +1,64 @@
+$brand-primary: #1EAEDB;
+
+
+a {
+  transition: 0.2s all;
+}
+
 .story {
   display: none;
 }
 
 .game {
-  max-width: 500px;
-  margin: 0 auto 40px;
-  text-align: center;
+  max-width: 540px;
+  margin: 0 auto 60px;
 }
 
 .chunk {
   font-size: 20px;
+  line-height: 1.3;
+  transition: 1.6s all;
   
-  p, ul, ol, li {
-    margin: 0.4em 0;
+  &.passed-1 {
+    opacity: 0.8;
+  }
+  
+  &.passed-2 {
+    opacity: 0.6;
+  }
+  
+  &.passed-3 {
+    opacity: 0.4;
+  }
+  
+  &.passed-4 {
+    opacity: 0.25;
+  }
+  
+  p, ul, ol {
+    margin: 1em 0;
+  }
+  
+  li {
+    margin: 0.7em 0;
   }
   
   ul, ol {
     list-style: none;
+    text-align: center;
+  }
+  
+  a {
+    text-decoration: none;
+    border-bottom: 1px solid rgba($brand-primary, 0.2);
+    
+    &:hover, &:focus {
+      border-color: $brand-primary;
+    }
+    
+    &:focus, &:active {
+      outline: none;
+    }
   }
 }
 

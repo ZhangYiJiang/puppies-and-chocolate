@@ -4,11 +4,12 @@ const $story = $('.story');
 const $game = $('.game');
 
 $.fn.fadeNext = function(duration, delay) {
-  this.fadeIn(duration, () => {
-    setTimeout(() => {
-      this.next().fadeNext(duration, delay);
-    }, delay);
-  });
+  this.fadeTo(duration, 1).promise()
+    .done(() => {
+      setTimeout(() => {
+        this.next().fadeNext(duration, delay);
+      }, delay)
+    });
 };
 
 $story.children('hr').each(function() {
@@ -44,10 +45,13 @@ $game.on('click', 'a[href^="#"]', function (evt) {
   $game.append(container);
   
   // Fade in + scroll to bottom
-  $('body, html').animate({ scrollTop: container.offset().top }, 500);
-  container.height(container.height());
-  container.children().hide()
-    .first().fadeNext(600, 900);
+  $('body, html').animate({ scrollTop: container.offset().top }, 1600);
+  container.children().fadeTo(0, 0)
+    .first().fadeNext(1200, 600);
   
-  container.prev().fadeTo(300, 0.3);
+  container
+    .prev().addClass('passed-1')
+    .prev().addClass('passed-2')
+    .prev().addClass('passed-3')
+    .prev().addClass('passed-4');
 });
