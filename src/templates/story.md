@@ -96,7 +96,7 @@ He raises his right hand towards you.
 
 “Awesome! See you in a bit!” Ming said cheerily.
 
-- Continue | Night falls and you make your way over to Ming’s place. {6.5}
+- Continue. | Night falls and you make your way over to Ming’s place. {6.5}
 
  ---
 
@@ -104,7 +104,7 @@ He raises his right hand towards you.
 
 “Awesome! Oh dear, that poor thing. No worries, see you in a bit!”
 
-- Continue | Night falls and you make your way over to Ming’s place. {6.5}
+- Continue. | Night falls and you make your way over to Ming’s place. {6.5}
 
 ---
  
@@ -112,7 +112,7 @@ He raises his right hand towards you.
 
 “Oh what a shame. How about you try one right now? It’ll not take too long, I promise.”
  
-- Accept his invitation | “Sounds great!” {6.31}
+- Accept his invitation. | “Sounds great!” {6.31}
 - Accept but tell him you cannot stay for long. | “Sounds great! I look forward to the dinner tonight, but I cannot stay for long because I need to take care of my puppy... It’s sick.” {6.32}
 
 --- 
@@ -121,7 +121,7 @@ He raises his right hand towards you.
 
 “Awesome! Come on in!”
 
-- Continue | “Please make yourself at home! Let me bring out the dish.” {7}
+- Continue. | “Please make yourself at home! Let me bring out the dish.” {7}
  
 ---
 
@@ -129,7 +129,7 @@ He raises his right hand towards you.
 
 “Oh dear, that poor thing. No worries, come on in!”
 
-- Continue | “Please make yourself at home! Let me bring out the dish.” {7}
+- Continue. | “Please make yourself at home! Let me bring out the dish.” {7}
 
 ---
  
@@ -137,7 +137,7 @@ He raises his right hand towards you.
 
 You knock on his door and he lets you in.
 
-- Step in | “Please make yourself at home! Let me bring out the dish.” {7}
+- Step in. | “Please make yourself at home! Let me bring out the dish.” {7}
 
 ---
 
@@ -563,7 +563,7 @@ You do not feel your clothes against your skin.
 You feel your limbs around and realised you are trapped in a cage.
 
 - Shout for help. | You shout for help. {26.1}
-- Feel around. | You feel around. {26.2}
+- Feel around. | You feel around. {26.3}
 
 ---
 
@@ -573,7 +573,6 @@ Your throat hurts as you try to scream; your voice sounds muffled and hoarse.
 
 There is no reply.
 
-- Shout for help. | You shout for help. {26.1}
 - Feel around. | You feel around. {26.2}
 - Wait. | You calm yourself down and wait in the darkness. {27}
 
@@ -583,9 +582,27 @@ There is no reply.
 
 You skin touches the cold metal bars of the cage. Metal everywhere.
 
-- Shout for help. | You shout for help. {26.1}
-- Feel around. | You feel around. {26.2}
 - Wait. | You calm yourself down and wait in the darkness. {27}
+
+---
+
+{26.3}
+
+You skin touches the cold metal bars of the cage. Metal everywhere.
+
+- Shout for help. | You shout for help. {26.4}
+- Wait. | You calm yourself down and wait in the darkness. {27}
+
+---
+
+{26.4}
+
+Your throat hurts as you try to scream; your voice sounds muffled and hoarse.
+
+There is no reply.
+
+- Wait. | You calm yourself down and wait in the darkness. {27}
+
 
 ---
 
@@ -594,7 +611,7 @@ You skin touches the cold metal bars of the cage. Metal everywhere.
 You waited and waited.
 
 - Shout for help. | You shout for help. {27.1}
-- Feel around. | You feel around. {27.2}
+- Feel around. | You feel around. {27.3}
 - Wait. | You calm yourself down and wait in the darkness. {28}
 
 ---
@@ -605,7 +622,6 @@ Your throat hurts as you try to scream; your voice sounds muffled and hoarse.
 
 There is no reply.
 
-- Shout for help. | You shout for help. {27.1}
 - Feel around. | You feel around. {27.2}
 - Wait. | You calm yourself down again and waited some more. {28}
 
@@ -615,9 +631,27 @@ There is no reply.
 
 You skin touches the cold metal bars of the cage. Metal everywhere.
 
-- Shout for help. | You shout for help. {27.1}
-- Feel around. | You feel around. {27.2}
 - Wait. | You calm yourself down again and waited some more. {28}
+
+---
+
+{27.3}
+
+You skin touches the cold metal bars of the cage. Metal everywhere.
+
+- Shout for help. | You shout for help. {27.4}
+- Wait. | You calm yourself down again and waited some more. {28}
+
+---
+
+{27.4}
+
+Your throat hurts as you try to scream; your voice sounds muffled and hoarse.
+
+There is no reply.
+
+- Wait. | You calm yourself down again and waited some more. {28}
+
 
 ---
 
@@ -669,7 +703,7 @@ You see Ming standing there, smiling at you.
 
 {31}
 
-“Ah be careful there.”, Ming cooed.
+“Ah be careful there,” Ming cooed.
 
 “Your vocal chords have been slashed, just like the rest in the other cages.”
 
@@ -685,7 +719,7 @@ You see Ming standing there, smiling at you.
 
 You look back at Ming.
 
-“You were so humorous earlier on today, believing that I kept puppies to harvest Angkumone.”
+“You were so gullible earlier on today, believing that I kept *puppies* to harvest Angkumone.”
 
 “I am running out of ideas though: I have already lied about kittens, rabbits and even hamsters for the previous neighbours in the Estate.” He chuckled.
 
@@ -705,11 +739,23 @@ Ming leans in closer.
 
 “I *literally* am not from this world.”
 
-“I just really, *really* like to eat Ang Ku Kueh made with Angkumone.”
+“I just really, *really* like to eat Ang Ku Kueh made with Angkumone - extracted from you lesser beings of course.”
+
+- But I am a human and humans are not the same! | You whimpered desperately to show your objection. {34}
+
+---
+
+{34}
+
+“Oh don't be surprised. I am just acting according to your moral system!"
+
+"Judging by how humans treat factory-farmed animals, what I am doing is perfectly moral."
+
+"If being morally right is *your* concern." He laughed.
 
 “Don’t worry. I won’t harvest you that soon, silly human.”
 
-“Your turn will come soon.” he winked.
+“Your turn will come.” he winked.
 
 Ming turns off the lights and leaves the room.
 
@@ -717,17 +763,17 @@ Darkness engulfs you again.
 
 You are left alone with your thoughts.
 
-- I am a human. | *I am a human.* {34}
-
----
-
-{34}
-
-- Ming is not from this world. | *Ming is not from this world.* {35}
+- I am a human. | *I am a human.* {35}
 
 ---
 
 {35}
+
+- Ming is not from this world. | *Ming is not from this world.* {36}
+
+---
+
+{36}
 
 *He sees humans as lesser beings and he harvests them for food.*
 
@@ -737,17 +783,17 @@ Your consciousness starts to fade. Lethargy sets in.
 
 *But I am a human… humans are not supposed to be factory-farmed for food.*
 
-- I do not deserve this fate. | *I do not deserve this fate.* {36}
-
----
-
-{36}
- 
-- I am a human. | *I am a human…* {37}
+- I do not deserve this fate. | *I do not deserve this fate.* {37}
 
 ---
 
 {37}
+ 
+- I am a human. | *I am a human…* {38}
+
+---
+
+{38}
 
 …
 
