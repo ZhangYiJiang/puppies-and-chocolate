@@ -438,7 +438,7 @@ Suddenly, you hear the familiar whimpers through the television screen and look 
 
 *It is a documentary on factory-farmed animals.*
 
-What was happening through the screen was like an **exact** replay of the earlier situation at Ming’s house:
+What was happening through the screen was morally similar to the earlier situation at Ming’s house:
 
 Just that chickens and pigs took the places of the puppies.
 
@@ -473,7 +473,7 @@ Suddenly, you hear the familiar whimpers through the laptop speakers as the vide
 
 *It is a video on factory-farmed animals.*
 
-What was happening through the screen was like an **exact** replay of the earlier situation at Ming’s house:
+What was happening through the screen was morally similar to the earlier situation at Ming’s house:
 
 Just that chickens and pigs took the places of the puppies.
 
