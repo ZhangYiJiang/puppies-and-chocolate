@@ -4,11 +4,14 @@ html
     meta(charset="utf-8")
     title Puppies and Ang Ku Kueh
     meta(name="viewport", content="width=device-width,initial-scale=1")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600,600i") 
     link(rel="stylesheet", href="app.css")
   body
     div.game
       div.intro.chunk
-        h1 Puppies and Ang Ku Kueh
+        h1 
+          | Puppies and 
+          span.kueh Ang Ku Kueh
         a.button.button-primary.start-game(href="#start") Start
     div.story
       include:story:commonmark(safe=false) story.md

@@ -1,8 +1,18 @@
 $brand-primary: #1EAEDB;
-
+$brand-blood: #f44336;
+$font-family-serif: Georgia, serif;
+$font-family-sans-serif: Source Sans Pro, sans-serif;
 
 a {
   transition: 0.2s all;
+}
+
+h1 {
+  font-weight: 300;
+  
+  .kueh {
+    color: $brand-blood;
+  }
 }
 
 .story {
@@ -12,6 +22,8 @@ a {
 .game {
   max-width: 600px;
   margin: 0 auto 100px;
+  font-family: $font-family-sans-serif;
+  font-weight: 400;
 }
 
 .chunk {
@@ -29,7 +41,7 @@ a {
   }
   
   li {
-    margin: 0.7em 0;
+    margin: 0.4em 0;
   }
   
   ul, ol {
@@ -49,11 +61,14 @@ a {
   }
   
   a {
+    display: inline-block;
     text-decoration: none;
+    padding: 1px 12px 3px;
     border-bottom: 1px solid rgba($brand-primary, 0.2);
     
     &:hover, &:focus {
       border-color: $brand-primary;
+      background: rgba($brand-primary, 0.08);
     }
     
     &:focus, &:active {
@@ -74,4 +89,12 @@ a {
   font-size: 24px;
   padding: 12px 24px;
   height: 64px;
+}
+
+.ending {
+  font-size: 45px;
+  text-align: center;
+  font-family: $font-family-serif;
+  font-style: italic;
+  color: $brand-blood;
 }

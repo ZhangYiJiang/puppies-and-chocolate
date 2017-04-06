@@ -71,7 +71,7 @@ He raises his right hand towards you.
 
 “I see. Need any help?"
 
-“I’ve got some time to spare before my I settle some matters later.” He chuckled.
+“I’ve got some time to spare before I settle some matters later.” He chuckled.
 
 - “Yes please! That would be very nice of you.” | “Yes please! That would be very nice of you.” you said. {6} 
 - “Nahh, I’m fine for now. Thank you for the offer!” | “Nahh, I’m fine for now. Thank you for the offer!” you said. {6} 
@@ -675,7 +675,7 @@ You see Ming standing there, smiling at you.
 
 “I would not continue shouting if I were you.”
 
-- You touch your own throat. | You felt your own blood and it sting to the touch. {32}
+- You touch your own throat. | You felt your own blood and it stings to the touch. {32}
 
 ---
 
@@ -689,7 +689,7 @@ You look back at Ming.
 
 “I am running out of ideas though: I have already lied about kittens, rabbits and even hamsters for the previous neighbours in the Estate.” He chuckled.
 
-He pauses and looks through the humans in the other cages.
+He pauses and looks at the humans in the other cages.
 
 “They always believe me.”
 
@@ -768,4 +768,4 @@ Your consciousness starts to fade. Lethargy sets in.
 …
 
 
-END
+<p class="ending">Fin</p>
