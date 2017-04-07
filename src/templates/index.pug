@@ -8,14 +8,18 @@ html
     link(rel="stylesheet", href="app.css")
   body
     div.game
-      div.intro.chunk
+      div.intro
         h1 
           | Puppies and 
           span.kueh Ang Ku Kueh
+        p a GET1029 Life, the Universe and Everything Project
+        p inspired by 
+          a(href="https://herringblue.github.io/content/train/index.html")
+            em The Train 
+            | by Ivan Chuang
         a.button.button-primary.start-game(href="#start") Start
     div.story
       include:story:commonmark(safe=false) story.md
       hr
     
-    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
     script(src="app.js")

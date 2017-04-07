@@ -1,4 +1,3 @@
-
 {start}
 
 You have just moved into The Janus Estate. 
@@ -82,7 +81,7 @@ He raises his right hand towards you.
 
 “Hey you know what, why not you come over for dinner tonight?”
 
-“I’ve went to culinary school over the summer and created this new technique myself.
+“I’ve went to culinary school over the summer and created this new technique myself."
 
 “I would *love* to have you try it.” Ming said.
 
@@ -813,5 +812,9 @@ Your consciousness starts to fade. Lethargy sets in.
 
 …
 
+...
 
-<p class="ending">Fin</p>
+...
+
+
+<p class="ending">END</p>

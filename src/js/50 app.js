@@ -49,7 +49,7 @@ $game.on('click', 'a[href^="#"]', function (evt) {
   
   // Exit if the link doesn't go to a chunk that exists, or if the player 
   // isn't pressing on a link in the last chunk
-  if (!chunk || !$(this).closest('.chunk:last-of-type').length) return;
+  if (!chunk || !$(this).closest('.chunk:last-of-type, .intro').length) return;
   $this.closest('ul').hide();
   
   // Insert the chunk in a container
