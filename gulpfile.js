@@ -5,6 +5,7 @@ const concat = require('gulp-concat');
 
 const filter = require('gulp-filter');
 const sourcemaps = require('gulp-sourcemaps');
+const uglify = require('gulp-uglify');
 const browserSync = require('browser-sync').create();
 const story = require('./story_transformer');
 
@@ -32,6 +33,7 @@ gulp.task('scss', () => {
 gulp.task('js', () => {
   return gulp.src(`${srcFolder}/js/*.js`)
     .pipe(concat('app.js'))
+    .pipe(uglify()).on('error', (err) => console.log(err))
     .pipe(gulp.dest(outFolder));
 });
 

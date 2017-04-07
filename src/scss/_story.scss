@@ -3,6 +3,10 @@ $brand-blood: #f44336;
 $font-family-serif: Georgia, serif;
 $font-family-sans-serif: Source Sans Pro, sans-serif;
 
+body {
+  transition: 2.8s background-color;
+}
+
 a {
   transition: 0.2s all;
 }
@@ -96,6 +100,25 @@ h1 {
   padding: 6px 24px 8px;
   height: auto;
   margin-top: 1em;
+}
+
+.night {
+  background: #111;
+}
+
+.night .chunk, 
+.night h1 {
+  color: #efefef;
+  
+  a {
+    color: $brand-blood;
+    border-color: rgba($brand-blood, 0.2);
+    
+    &:hover {
+      background: rgba($brand-blood, 0.2);
+      border-color: $brand-blood;
+    }
+  }
 }
 
 .ending {

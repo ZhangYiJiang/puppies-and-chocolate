@@ -10,8 +10,9 @@ $.fn.fadeNext = function(pDelay, liDelay) {
   
   const wait = $(this[0]).is('li') ? liDelay: pDelay;
   
-  setTimeout(() => {
-    this.slice(1).fadeNext(pDelay, liDelay);
+  const rest = this.slice(1);
+  setTimeout(function() {
+    rest.fadeNext(pDelay, liDelay);
   }, wait);
 };
 
@@ -23,7 +24,8 @@ $story.children('hr').each(function() {
   if (anchor.length) {
     chunk.find('a[href]').each(function() {
       const $this = $(this);
-      let replacement;
+      var replacement;
+      
       if ($this.text().includes('|')) {
         const parts = $this.html().split('|');
         $this.html(parts[0]);
@@ -65,12 +67,21 @@ $game.on('click', 'a[href^="#"]', function (evt) {
   replacement.prependTo(container);
   
   // Fade in + scroll to bottom
-  $('body, html').animate({ scrollTop: container.offset().top }, 3600);
+  const scrollDuration = container.children().length > 2 ? 3600 : 1800;
+  const scrollTop = Math.max($('body, html').scrollTop() + container.height(), container.offset().top);
+  $('body, html').animate({ scrollTop: scrollTop }, scrollDuration);
   container.find('p, li').fadeNext(1000, 400);
   
+  // Fade out previous chunks by adding class names to the last 4 chunks
   container
     .prev().addClass('passed-1')
     .prev().addClass('passed-2')
     .prev().addClass('passed-3')
     .prev().addClass('passed-4');
+
+
+  // SPECIAL: Turn off the lights at chunk 26
+  if (chunkName === '26') {
+    $('body').addClass('night');
+  }
 });
